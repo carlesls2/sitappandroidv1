@@ -37,7 +37,7 @@ public class LocationActivity extends FragmentActivity {
     private static final String ARGUMENT_NAME = "name";
 
     FragmentTabHost mTabHost;
-
+    // probe github and source tree.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,13 +47,11 @@ public class LocationActivity extends FragmentActivity {
 
         final Bundle args1 = new Bundle();
         args1.putString(ARGUMENT_NAME, TAG_TAB_1);
-        mTabHost.addTab(mTabHost.newTabSpec(TAG_TAB_1)
-                .setIndicator(TAG_TAB_1), TabRoot.class, args1);
+        mTabHost.addTab(mTabHost.newTabSpec(TAG_TAB_1).setIndicator(TAG_TAB_1), TabRoot.class, args1);
 
         final Bundle args2 = new Bundle();
         args2.putString(ARGUMENT_NAME, TAG_TAB_2);
-        mTabHost.addTab(mTabHost.newTabSpec(TAG_TAB_2)
-                .setIndicator(TAG_TAB_2), TabRoot.class, args2);
+        mTabHost.addTab(mTabHost.newTabSpec(TAG_TAB_2).setIndicator(TAG_TAB_2), TabRoot.class, args2);
     }
 
     /*
