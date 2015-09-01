@@ -37,7 +37,7 @@ public class LocationActivity extends FragmentActivity {
     private static final String ARGUMENT_NAME = "name";
 
     FragmentTabHost mTabHost;
-    // probe github and source tree.
+    // probe github and source tree. another probe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
